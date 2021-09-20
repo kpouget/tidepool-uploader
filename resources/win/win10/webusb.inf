@@ -12,13 +12,22 @@ DriverVer   = 09/04/2012,13.54.20.543
 %ManufacturerName% = Standard,NTx86,NTia64,NTamd64
 
 [Standard.NTx86]
-%USB\MyCustomDevice.DeviceDesc% = USB_Install,USB\VID_0E8D&PID_201D&MI_00
+%DeviceDesc% = USB_Install,USB\VID_0E8D&PID_201D&MI_00 ; DASH
+%DeviceDesc% = USB_Install,USB\VID_173A&PID_21CF ; Aviva Connect
+%DeviceDesc% = USB_Install,USB\VID_173A&PID_21D5 ; Guide
+%DeviceDesc% = USB_Install,USB\ID_173A&PID_21D6 ; Guide Me
 
 [Standard.NTia64]
-%USB\MyCustomDevice.DeviceDesc% = USB_Install,USB\VID_0E8D&PID_201D&MI_00
+%DeviceDesc% = USB_Install,USB\VID_0E8D&PID_201D&MI_00 ; DASH
+%DeviceDesc% = USB_Install,USB\VID_173A&PID_21CF ; Aviva Connect
+%DeviceDesc% = USB_Install,USB\VID_173A&PID_21D5 ; Guide
+%DeviceDesc% = USB_Install,USB\ID_173A&PID_21D6 ; Guide Me
 
 [Standard.NTamd64]
-%USB\MyCustomDevice.DeviceDesc% = USB_Install,USB\VID_0E8D&PID_201D&MI_00
+%DeviceDesc% = USB_Install,USB\VID_0E8D&PID_201D&MI_00 ; DASH
+%DeviceDesc% = USB_Install,USB\VID_173A&PID_21CF ; Aviva Connect
+%DeviceDesc% = USB_Install,USB\VID_173A&PID_21D5 ; Guide
+%DeviceDesc% = USB_Install,USB\ID_173A&PID_21D6 ; Guide Me
 
 ; =================== Installation ===================
 
@@ -41,5 +50,5 @@ HKR,,DeviceInterfaceGUIDs,0x10000,"{D252C909-8325-43A8-9235-0169BF676338}"
 [Strings]
 ManufacturerName              = "Tidepool"
 ClassName                     = "WinUSB devices"
-USB\MyCustomDevice.DeviceDesc = "Tidepool USB driver (WinUSB)"
+DeviceDesc = "Tidepool USB driver (WinUSB)"
 REG_MULTI_SZ = 0x00010000
